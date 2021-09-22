@@ -1,0 +1,476 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslateblue;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 100%;
+    background: rgb(72, 61, 139);
+    background: linear-gradient(180deg, rgba(72, 61, 139, 1) 0%, rgba(72, 61, 139, 1) 11%, rgba(93, 0, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin: 2%;
+}
+
+.container {
+    background-color: #210d3b;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.smallnav {
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0px;
+    background-color: #d09a3b;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.wrap {
+    display: none;
+}
+
+.large {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin: auto;
+    margin-top: 5%;
+}
+
+article {
+    height: auto;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer p {
+    border-top: 2px solid white;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+figcaption {
+    /*    padding: 5px;*/
+    width: auto;
+    font-size: 24px;
+}
+
+.luca {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.pexel {
+    max-width: 50%;
+    height: auto;
+    display: inline;
+    border: solid 3px white;
+    padding: 0;
+}
+
+table {
+    border: 3px solid white;
+    border-collapse: collapse;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+th,
+td {
+    border: 1px solid white;
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+}
+
+colgroup {
+    background-color: darkslateblue;
+}
+
+tr a:visited {
+    color: white;
+}
+
+thead {
+    background-color: midnightblue;
+}
+
+.ski {
+    max-width: 45%;
+    height: auto;
+    padding: 5px;
+}
+
+.skiarticle p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .ski {
+        max-width: 50%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .skiarticle p {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+    }
+
+    table {
+        width: 70%;
+        margin: auto;
+    }
+
+    body {
+        background: rgb(72, 61, 139);
+        background: linear-gradient(180deg, rgba(72, 61, 139, 1) 0%, rgba(72, 61, 139, 1) 11%, rgba(93, 0, 255, 1) 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container {
+        background-color: #210d3b;
+        margin: auto;
+        width: 80%;
+        border-radius: 5%;
+    }
+
+    article p {
+        margin: auto;
+        width: 85%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    article p {
+        margin: auto;
+        width: 55%;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 75%;
+    }
+
+    .pexel {
+        max-width: 65%;
+        height: auto;
+        margin: 5px;
+        padding: 0px;
+        display: inline;
+    }
+
+    .ski {
+        max-width: 35%;
+        height: auto;
+        margin: 5px;
+        padding: 0px;
+        display: block;
+        float: right;
+    }
+
+    .skiarticle p {
+        position: relative;
+        width: 50%;
+        text-align: left;
+    }
+
+    .skiarticle {
+        overflow: auto;
+        margin: auto;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .smallnav {
+        display: none;
+    }
+
+    .large {
+        display: block;
+    }
+
+    footer {
+        position: relative;
+        height: 3rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 1%;
+    }
+
+    footer p {
+        width: 50%;
+    }
+
+    .container {
+        background-color: #210d3b;
+        margin: auto;
+        min-height: 100vh;
+        width: 992px;
+        border-radius: 5%;
+    }
+
+    header {
+        padding-top: 30px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    p {
+        margin: 10px auto;
+    }
+
+    nav {
+        position: absolute;
+        top: 10%;
+        left: 2.5%;
+        width: 13vw;
+        color: white;
+    }
+
+    .navcontain {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        width: 40%;
+        height: 80%;
+        opacity: 0;
+        transition: transform .5s, opacity .5s;
+        z-index: 5;
+    }
+
+    nav a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    nav a div {
+        height: 100%;
+        background-size: cover;
+        border-radius: inherit;
+    }
+
+    nav a:nth-child(1) {
+        border-radius: 120% 0 0 0;
+        top: -62.5%;
+        left: -64.5%;
+        transform-origin: 110% 110%;
+        transition: transform .4s .15s;
+    }
+
+    nav a:nth-child(1):hover {
+        color: white;
+    }
+
+    nav a:nth-child(1) div {
+        background-color: #d09a3b;
+    }
+
+    .lgcolour {
+        font-size: 2vw;
+        position: absolute;
+        left: 30%;
+        transform: translateX(0%) translateY(70%) scale(1.2);
+    }
+
+
+    nav a:nth-child(2) {
+        border-radius: 0 120% 0 0;
+        top: -62.5%;
+        left: 70.5%;
+        transform-origin: -10% 110%;
+        transition: transform .4s .2s;
+    }
+
+    nav a:nth-child(2) div {
+        background-color: #d09a3b;
+    }
+
+    .lgcloud {
+        font-size: 2vw;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        transform: scale(1.2);
+    }
+
+    nav a:nth-child(2):hover {
+        color: white;
+    }
+
+    nav a:nth-child(3) {
+        border-radius: 0 0 0 120%;
+        top: 70.5%;
+        left: -64.5%;
+        transform-origin: 110% -10%;
+        transition: transform .4s .25s;
+    }
+
+    nav a:nth-child(3) div {
+        background-color: #d09a3b;
+    }
+
+    .lgpicture {
+        font-size: 2vw;
+        position: absolute;
+        top: 5%;
+        left: 25%;
+        transform: translateX(22%) translateY(50%) scale(1.2);
+    }
+
+    nav a:nth-child(3):hover {
+        color: white;
+    }
+
+    nav a:nth-child(4) {
+        border-radius: 0 0 120% 0;
+        top: 70.5%;
+        left: 70.5%;
+        transform-origin: -10% -10%;
+        transition: transform .4s .3s;
+    }
+
+    nav a:nth-child(4) div {
+        background-color: #d09a3b;
+    }
+
+    .lglist {
+        font-size: 2vw;
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        transform: translateX(-4%)translateY(50%) scale(1.2);
+    }
+
+    nav a:nth-child(4):hover {
+        color: white;
+    }
+
+    nav a:nth-child(5) {
+        width: 135%;
+        height: 135%;
+        top: -15%;
+        left: -15%;
+        border-radius: 50%;
+        transform: scale(1);
+    }
+
+    nav a:nth-child(5) div {
+        background-image: url('../Images/MySite%20wallpaper.png');
+    }
+
+    nav span {
+        position: relative;
+        display: block;
+        left: 25%;
+        width: 6vw;
+        height: 6vw;
+        border-radius: 100%;
+        background: #d09a3b;
+        transition: 0.5s;
+    }
+
+    nav span:hover {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .navicon {
+        position: absolute;
+        font-size: 3.1vw;
+        top: 1.5vw;
+        left: 1.5vw;
+    }
+
+
+    nav span:hover + .navcontain,
+    .navcontain:hover {
+        transform: scale(.8) translateZ(0px);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    /*    The actual animation of the other parts moving in*/
+
+
+
+    nav span:hover + .navcontain a,
+    .navcontain:hover a {
+        transform: scale(1.25) translatez(0px);
+    }
+
+    /*    Scaling how big the animation is, made it a bit smaller*/
+
+
+    nav a:hover div {
+        opacity: 1;
+        transform: translatez(0px);
+    }
+}

@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+    background-color: darkslateblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 span {
+    font-style: italic;
+}
+
+h2 {
+    padding-left: 2%;
+}
+
+table {
+    margin: auto;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+
+article {
+    background-color: lightskyblue;
+}
+
+tr,
+td,
+th {
+    border: solid 2px black;
+}
+
+th {
+    background-color: grey;
+}
+
+td {
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navlink {
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
+a:visited {
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover {
+    filter: grayscale(100%);
+}
+
+.firstp {
+    padding: 2%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0px;
+}
+
+figure {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+figure p {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    article {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        background-color: lightskyblue;
+        border: 4px solid black;
+    }
+
+    figure {
+        display: relative;
+    }
+
+    figure:hover p {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 22%;
+        width: 10%;
+        top: 85%;
+        height: 7%;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    figure:hover .fourth {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    figure:hover .seventh {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 68%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .list {
+        position: relative;
+        left: 42%;
+        width: 30%;
+    }
+
+
+    h2 {
+        text-align: center;
+    }
+}
